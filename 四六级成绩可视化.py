@@ -2,7 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from pylab import mpl 
 #设置字体
-mpl.rcParams['font.sans-serif'] = ['Yahei Consolas Hybrid']
+#mpl.rcParams['font.sans-serif'] = ['Yahei Consolas Hybrid']
+#设置全局字体,上面的方法在windows下不适用
+matplotlib.rcParams['font.family']='SimHei'
 #标签
 labels = np.array(['听力','阅读','写作'])
 #数据个数
